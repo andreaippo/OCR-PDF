@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Service
+MimeType=image/*
+Icon=acroread
+Actions=ocrpdf
+
+
+
+[Desktop Action ocrpdf]
+Name=Convert to PDF with OCR
+Icon=acroread
+Exec=tesseract %f %f pdf -l eng && rm -f tesseract_opencl_profile_devices.dat
